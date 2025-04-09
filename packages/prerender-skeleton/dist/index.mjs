@@ -32,15 +32,17 @@ var generatePrerenderHtml = (options) => {
   }).then((renderedRoutes) => {
     renderedRoutes.forEach((renderedRoute) => {
       try {
-        const outputDir = path.join(__dirname, "app", renderedRoute.route);
+        const outputDir = path.join(options.staticDir, renderedRoute.route);
         const outputFile = `${outputDir}/index.html`;
         mkdirp.sync(outputDir);
         fs.writeFileSync(outputFile, renderedRoute.html.trim());
       } catch (e) {
+        console.log("error", e);
       }
     });
     return prerenderer.destroy();
   }).catch((err) => {
+    console.log(err.message, err.stack);
     return prerenderer.destroy();
   });
 };

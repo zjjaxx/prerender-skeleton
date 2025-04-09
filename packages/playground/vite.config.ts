@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [
     prerenderSkeleton({
       routes: [{ path: '/test', skeleton: true }],
+      
       // 静态文件目录
       staticDir: path.join(__dirname, 'dist'),
       // 是否压缩 HTML 文件
@@ -20,7 +21,7 @@ export default defineConfig({
       renderer: new Renderer({
         injectProperty: '__skeleton_mock',
         // Optional - Any values you'd like your app to have access to via `window.injectProperty`.
-        headless: true,
+        headless: false,
         renderAfterTime: 5000, // Wait 5 seconds.
         consoleHandler: (route, message) => {
           if (message.type() === 'error') {

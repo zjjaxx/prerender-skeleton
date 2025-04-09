@@ -67,15 +67,17 @@ var generatePrerenderHtml = (options) => {
   }).then((renderedRoutes) => {
     renderedRoutes.forEach((renderedRoute) => {
       try {
-        const outputDir = import_path.default.join(__dirname, "app", renderedRoute.route);
+        const outputDir = import_path.default.join(options.staticDir, renderedRoute.route);
         const outputFile = `${outputDir}/index.html`;
         mkdirp.sync(outputDir);
         import_fs.default.writeFileSync(outputFile, renderedRoute.html.trim());
       } catch (e) {
+        console.log("error", e);
       }
     });
     return prerenderer.destroy();
   }).catch((err) => {
+    console.log(err.message, err.stack);
     return prerenderer.destroy();
   });
 };
