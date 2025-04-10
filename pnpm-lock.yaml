@@ -96,12 +96,24 @@ importers:
       '@prerenderer/renderer-puppeteer':
         specifier: ^1.2.4
         version: 1.2.4(puppeteer@24.6.0(typescript@5.8.3))
+      ajv:
+        specifier: ^8.17.1
+        version: 8.17.1
       mkdirp:
         specifier: ^3.0.1
         version: 3.0.1
+      promise-limit:
+        specifier: ^2.7.0
+        version: 2.7.0
       puppeteer:
         specifier: ^24.6.0
         version: 24.6.0(typescript@5.8.3)
+      schema-utils:
+        specifier: ^4.3.0
+        version: 4.3.0
+      ts-deepmerge:
+        specifier: ^7.0.2
+        version: 7.0.2
     devDependencies:
       '@types/node':
         specifier: ^22.14.0
@@ -2520,9 +2532,9 @@ packages:
     resolution: {integrity: sha512-1edyXKgh6XnJsJSQ8mKWXnN/BVaIbFMLpouRUrXgVq7WYne5kw3MW7UPhO44uRXQSIpTSXoJbmrR2X0w9kUTyg==, tarball: https://registry.npmjs.org/schema-utils/-/schema-utils-4.0.0.tgz}
     engines: {node: '>= 12.13.0'}
 
-  schema-utils@4.2.0:
-    resolution: {integrity: sha512-L0jRsrPpjdckP3oPug3/VxNKt2trR8TcabrM6FOAAlvC/9Phcmm+cuAgTlxBqdBR1WJx7Naj9WHw+aOmheSVbw==, tarball: https://registry.npmjs.org/schema-utils/-/schema-utils-4.2.0.tgz}
-    engines: {node: '>= 12.13.0'}
+  schema-utils@4.3.0:
+    resolution: {integrity: sha512-Gf9qqc58SpCA/xdziiHz35F4GNIWYWZrEshUc/G/r5BnLph6xpKuLeoJoQuj5WfBIx/eQLf+hmVPYHaxJu7V2g==, tarball: https://registry.npmjs.org/schema-utils/-/schema-utils-4.3.0.tgz}
+    engines: {node: '>= 10.13.0'}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==, tarball: https://registry.npmjs.org/semver/-/semver-6.3.1.tgz}
@@ -2777,6 +2789,10 @@ packages:
 
   ts-deepmerge@6.2.1:
     resolution: {integrity: sha512-8CYSLazCyj0DJDpPIxOFzJG46r93uh6EynYjuey+bxcLltBeqZL7DMfaE5ZPzZNFlav7wx+2TDa/mBl8gkTYzw==, tarball: https://registry.npmjs.org/ts-deepmerge/-/ts-deepmerge-6.2.1.tgz}
+    engines: {node: '>=14.13.1'}
+
+  ts-deepmerge@7.0.2:
+    resolution: {integrity: sha512-akcpDTPuez4xzULo5NwuoKwYRtjQJ9eoNfBACiBMaXwNAx7B1PKfe5wqUFJuW5uKzQ68YjDFwPaWHDG1KnFGsA==, tarball: https://registry.npmjs.org/ts-deepmerge/-/ts-deepmerge-7.0.2.tgz}
     engines: {node: '>=14.13.1'}
 
   ts-interface-checker@0.1.13:
@@ -3693,7 +3709,7 @@ snapshots:
     dependencies:
       promise-limit: 2.7.0
       puppeteer: 24.6.0(typescript@5.8.3)
-      schema-utils: 4.2.0
+      schema-utils: 4.3.0
       ts-deepmerge: 6.2.1
 
   '@puppeteer/browsers@2.9.0':
@@ -5634,7 +5650,7 @@ snapshots:
       ajv-formats: 2.1.1(ajv@8.17.1)
       ajv-keywords: 5.1.0(ajv@8.17.1)
 
-  schema-utils@4.2.0:
+  schema-utils@4.3.0:
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.17.1
@@ -5905,6 +5921,8 @@ snapshots:
       typescript: 5.8.3
 
   ts-deepmerge@6.2.1: {}
+
+  ts-deepmerge@7.0.2: {}
 
   ts-interface-checker@0.1.13: {}
 

@@ -9,12 +9,12 @@
   "exports": {
     ".": {
       "import": {
-        "default": "./dist/index.mjs",
-        "types": "./dist/index.d.mts"
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
       },
       "require": {
-        "default": "./dist/index.js",
-        "types": "./dist/index.d.ts"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
       }
     }
   },
@@ -27,8 +27,12 @@
   "dependencies": {
     "@prerenderer/prerenderer": "^1.2.5",
     "@prerenderer/renderer-puppeteer": "^1.2.4",
+    "ajv": "^8.17.1",
     "mkdirp": "^3.0.1",
-    "puppeteer": "^24.6.0"
+    "promise-limit": "^2.7.0",
+    "puppeteer": "^24.6.0",
+    "schema-utils": "^4.3.0",
+    "ts-deepmerge": "^7.0.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

@@ -2,7 +2,7 @@ import { generatePrerenderHtml } from "./core/generate";
 import { PrerenderSkeletonOption} from "./types/index"
 import type { Plugin } from "vite";
 
-import Render from "@prerenderer/renderer-puppeteer";
+import Render from "./core/render/index";
 export default function PrerenderSkeleton(
   options: PrerenderSkeletonOption
 ): Plugin{
