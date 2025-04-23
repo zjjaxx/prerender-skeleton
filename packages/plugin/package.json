@@ -6,6 +6,9 @@
   "scripts": {
     "build": "tsup-node"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "import": {

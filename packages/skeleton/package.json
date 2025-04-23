@@ -1,6 +1,9 @@
 {
   "name": "@prerender_skeleton/skeleton",
   "version": "1.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "skeleton",
   "main": "index.js",
   "files": [
