@@ -1,6 +1,6 @@
 {
   "name": "@prerender_skeleton/plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "预渲染+骨架屏",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,9 @@
       }
     }
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "prerender",
     "skeleton"

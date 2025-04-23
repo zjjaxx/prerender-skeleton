@@ -138,7 +138,6 @@ export default class SkeletonRender {
     this.removeMock();
   }
   async startGenSkeleton() {
-    debugger;
     const app = document.getElementById(this.options.appId);
     if (!app) {
       console.error("根元素没找到~");
@@ -317,7 +316,6 @@ export default class SkeletonRender {
       backgroundSize: `100% ${px2rem(parseInt(lineHeight) * 1.1)}`,
       position,
     });
-    debugger
     // add white mask
     if(display==='inline'){
       return
@@ -370,7 +368,6 @@ export default class SkeletonRender {
     },
     maskWidthPercent = 0.5
   ) {
-    debugger
     let left;
     let right;
     switch (textAlign) {

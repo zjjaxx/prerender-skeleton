@@ -1,0 +1,9 @@
+# @prerender_skeleton/plugin
+
+## 1.0.1
+
+### Patch Changes
+
+- v1
+- Updated dependencies
+  - @prerender_skeleton/skeleton@1.0.1

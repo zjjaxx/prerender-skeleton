@@ -327,7 +327,6 @@ var SkeletonRender = /*#__PURE__*/ function() {
                 return _async_to_generator(function() {
                     var app, newNode;
                     return _ts_generator(this, function(_state) {
-                        debugger;
                         app = document.getElementById(_this.options.appId);
                         if (!app) {
                             console.error("\u6839\u5143\u7D20\u6CA1\u627E\u5230~");
@@ -464,7 +463,6 @@ var SkeletonRender = /*#__PURE__*/ function() {
                     backgroundSize: "100% ".concat(px2rem(parseInt(lineHeight) * 1.1)),
                     position: position
                 });
-                debugger;
                 if (display === "inline") {
                     return;
                 }
@@ -497,7 +495,6 @@ var SkeletonRender = /*#__PURE__*/ function() {
             key: "addTextMask",
             value: function addTextMask(paragraph, param) {
                 var textAlign = param.textAlign, lineHeight = param.lineHeight, paddingBottom = param.paddingBottom, paddingLeft = param.paddingLeft, paddingRight = param.paddingRight, maskWidthPercent = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 0.5;
-                debugger;
                 var left;
                 var right;
                 switch(textAlign){
