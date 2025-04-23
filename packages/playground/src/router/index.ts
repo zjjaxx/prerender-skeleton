@@ -17,6 +17,12 @@ const router = createRouter({
       component: ()=>import("@/views/test.vue"),
     },
     {
+      path: '/orderDetail',
+      name: 'orderDetail',
+      // @ts-ignore
+      component: ()=>import("@/views/orderDetail.vue"),
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

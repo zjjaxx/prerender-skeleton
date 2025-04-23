@@ -1,0 +1,51 @@
+{
+  "name": "@prerender_skeleton/plugin",
+  "version": "1.0.0",
+  "description": "预渲染+骨架屏",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup-node"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./renderComplate": {
+      "import": {
+        "types": "./dist/renderComplate.d.mts",
+        "default": "./dist/renderComplate.mjs"
+      },
+      "require": {
+        "types": "./dist/renderComplate.d.ts",
+        "default": "./dist/renderComplate.js"
+      }
+    }
+  },
+  "keywords": [
+    "prerender",
+    "skeleton"
+  ],
+  "author": "zjjaxx",
+  "license": "ISC",
+  "dependencies": {
+    "@prerender_skeleton/skeleton": "workspace:*",
+    "@prerenderer/prerenderer": "^1.2.5",
+    "ajv": "^8.17.1",
+    "mkdirp": "^3.0.1",
+    "promise-limit": "^2.7.0",
+    "puppeteer": "24.6.0",
+    "schema-utils": "^4.3.0",
+    "ts-deepmerge": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "vite": "^6.2.5"
+  }
+}
