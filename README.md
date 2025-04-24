@@ -31,8 +31,6 @@ export default defineConfig({
       routes: [{ path: '/orderDetail', skeleton: true }],
       // 静态文件目录
       staticDir: path.join(__dirname, 'dist'),
-      // 是否压缩 HTML 文件
-      //  minify: true,
       // 网络请求失败、404 错误等情况下应该返回的 HTML 文件
       indexPath: 'index.html',
       // 渲染时是否显示浏览器窗口，值写false可用于调试
@@ -137,7 +135,7 @@ pnpm i @prerender_skeleton/plugin
 
 ###  PuppeteerRendererOptions
 
-所有选项均非必填项，默认情况下，当Puppeteer准备就绪（即DOMContentLoaded事件触发时），页面将会进行渲染。
+所有选项均非必填项
 
 | Option                   | Type                                                         | Default                | Description                                                  |
 | ------------------------ | ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ |
