@@ -102,7 +102,6 @@ export default class PuppeteerRenderer implements IRenderer {
     }
     this.puppeteer = await puppeteer.launch({
       headless: headless ? "new" : false,
-      protocolTimeout:
       args,
       ...(launchOptions || legacyOptions),
     });

@@ -119,7 +119,6 @@ export default class SkeletonRender {
   constructor(options: SkeletonOption) {
     this.options = Object.assign(
       {
-        debug: false,
         animation: true,
         appId: "app",
         minGrayBlockWidth: 30,
@@ -316,6 +315,7 @@ export default class SkeletonRender {
       backgroundSize: `100% ${px2rem(parseInt(lineHeight) * 1.1)}`,
       position,
     });
+    this.addAnimationForElement(ele)
     // add white mask
     if(display==='inline'){
       return

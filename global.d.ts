@@ -4,7 +4,6 @@ declare global {
     routes: {
       path: string;
       skeleton: boolean;
-      debug?: boolean;
       animation?: true;
       appId?: string;
       minGrayBlockWidth?: number;

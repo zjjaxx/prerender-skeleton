@@ -283,7 +283,6 @@ function _ts_generator(thisArg, body) {
         function SkeletonRender(options) {
             _class_call_check(this, SkeletonRender);
             this.options = Object.assign({
-                debug: false,
                 animation: true,
                 appId: "app",
                 minGrayBlockWidth: 30,
@@ -464,6 +463,7 @@ function _ts_generator(thisArg, body) {
                         backgroundSize: "100% ".concat(px2rem(parseInt(lineHeight) * 1.1)),
                         position: position
                     });
+                    this.addAnimationForElement(ele);
                     if (display === "inline") {
                         return;
                     }

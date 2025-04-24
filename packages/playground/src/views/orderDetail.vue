@@ -106,7 +106,10 @@ onMounted(async () => {
   try {
     const response = await axios.get('/mock/order.json')
     order.value = response.data
-    dispatchRenderEvent('__renderOver')
+    setTimeout(()=>{
+      dispatchRenderEvent('__renderOver')
+    },5000)
+    // dispatchRenderEvent('__renderOver')
   } catch (error) {
     console.error('数据加载失败:', error)
   }

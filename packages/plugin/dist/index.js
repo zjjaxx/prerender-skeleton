@@ -333,7 +333,7 @@ var PuppeteerRenderer = class {
     }
     this.puppeteer = await import_puppeteer.default.launch({
       headless: headless ? "new" : false,
-      protocolTimeout: args,
+      args,
       ...launchOptions || legacyOptions
     });
   }

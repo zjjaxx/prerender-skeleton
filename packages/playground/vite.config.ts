@@ -23,7 +23,6 @@ export default defineConfig({
           devtools:true
         },
         renderAfterDocumentEvent:"__renderOver",
-        timeout:30000,
         viewport: {
           width: 390,
           height: 844,

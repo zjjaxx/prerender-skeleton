@@ -293,7 +293,7 @@ var PuppeteerRenderer = class {
     }
     this.puppeteer = await puppeteer.launch({
       headless: headless ? "new" : false,
-      protocolTimeout: args,
+      args,
       ...launchOptions || legacyOptions
     });
   }
