@@ -89,6 +89,7 @@ onMounted(async () => {
 <img  src="./imgs/before.png" alt="before" style="zoom:50%;display:inline-block" />
 <img src="./imgs/after.png" alt="after" style="zoom:50%;display:inline-block" />
 </div>
+
 ## Documentation
 
 所有软件包均使用 TypeScript 进行了强类型定义，如果某些文档缺失或存在疑问，我们建议参考这些类型定义。
@@ -122,7 +123,7 @@ pnpm i @prerender_skeleton/plugin
 | minGrayBlockWidth  | Number  | No        | 30      | 最小骨架屏元素宽度，小于该宽度则不渲染骨架屏     |
 | minGrayPseudoWidth | Number  | No        | 30      | 最小骨架屏伪类元素宽度，小于该宽度则不渲染骨架屏 |
 
-###  
+
 
 ### Server Options
 
@@ -154,6 +155,15 @@ pnpm i @prerender_skeleton/plugin
 | launchOptions            | [LaunchOptions](https://github.com/puppeteer/puppeteer/blob/main/docs/api/puppeteer.launchoptions.md) | None                   | 这些选项将被传递给 puppeteer.launch()。                      |
 | navigationOptions        | [WaitForOptions](https://github.com/puppeteer/puppeteer/blob/main/docs/api/puppeteer.waitforoptions.md) | None                   | 这些选项将被传递给 page.goto()，例如 timeout: 30000ms。      |
 
+### Sketelon attrs
+
+| Attr                  | Description                    |
+| --------------------- | ------------------------------ |
+| data-skeleton-remove  | 在骨架屏中删除该元素           |
+| data-skeleton-ignore  | 在骨架屏中忽略该元素           |
+| data-skeleton-empty   | 在骨架屏中清空该元素的子元素   |
+| data-skeleton-bgcolor | 在骨架屏中自定义该元素的背景色 |
+
 ## Contributing
 
 This is a monorepo, using `changeset`, so you'll need to clone the repository, then use changeset to publish
@@ -173,6 +183,5 @@ This is a monorepo, using `changeset`, so you'll need to clone the repository, t
 </tr>
 </tbody>
 </table>
-
 
 
