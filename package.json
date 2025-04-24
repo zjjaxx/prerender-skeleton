@@ -1,6 +1,6 @@
 {
   "name": "prerender-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "适用于vite的预渲染+骨架屏插件",
   "main": "index.js",
