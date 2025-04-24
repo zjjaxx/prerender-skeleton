@@ -153,3 +153,26 @@ pnpm i @prerender_skeleton/plugin
 | viewport                 | [Viewport](https://github.com/puppeteer/puppeteer/blob/main/docs/api/puppeteer.viewport.md) | None                   | 这些选项将被传递给 puppeteer.launch()。表示渲染设备的视口大小等 |
 | launchOptions            | [LaunchOptions](https://github.com/puppeteer/puppeteer/blob/main/docs/api/puppeteer.launchoptions.md) | None                   | 这些选项将被传递给 puppeteer.launch()。                      |
 | navigationOptions        | [WaitForOptions](https://github.com/puppeteer/puppeteer/blob/main/docs/api/puppeteer.waitforoptions.md) | None                   | 这些选项将被传递给 page.goto()，例如 timeout: 30000ms。      |
+
+## Contributing
+
+This is a monorepo, using `changeset`, so you'll need to clone the repository, then use changeset to publish
+
+## Maintainers
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/zjjaxx">
+          <img width="150" height="150" src="https://github.com/zjjaxx.png?v=3&s=150">
+          </br>
+          zjjaxx
+        </a>
+      </td>
+</tr>
+</tbody>
+</table>
+
+
+

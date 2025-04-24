@@ -9,7 +9,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
     "tsup": "^8.4.0",
