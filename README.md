@@ -15,6 +15,8 @@
 
 该插件是基于[prerenderer](https://github.com/Tofandel/prerenderer/tree/%40prerenderer/renderer-puppeteer%401.2.4)的设计理念上加入了自动化骨架屏方案
 
+***需要注意的是因为存在多个HTML文件，所以该插件只适用于 HTML5 navigation(history模式)***
+
 ## Example `prerender_skeleton` Usage
 
 ```typescript
