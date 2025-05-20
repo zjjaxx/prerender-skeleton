@@ -1,6 +1,6 @@
 {
   "name": "@prerender_skeleton/plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "适用于vite的预渲染+骨架屏插件",
   "main": "index.js",
   "scripts": {

@@ -6,5 +6,6 @@ export default defineConfig({
   clean: true,
   dts:true,
   target:"es5",
+  minify:true,
   format:['iife',"cjs","esm"]
 })

@@ -1,8 +1,1 @@
-// src/index.ts
-var index_default = {
-    test: function() {
-        console.log("hello");
-    }
-};
-export { index_default as default };
-//# sourceMappingURL=index.mjs.map
+var e={test:function(){console.log("hello")}};export{e as default};//# sourceMappingURL=index.mjs.map
